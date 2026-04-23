@@ -32,7 +32,7 @@ const ProjectCard = ({
                     </button>
                 </div>
             </div>
-            {title}
+    
         </article>
     )
 }

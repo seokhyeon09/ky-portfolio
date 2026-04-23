@@ -7,6 +7,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -16,8 +18,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -35,15 +35,11 @@ a {
   text-decoration: none;
 }
 
-ul, ol, dl{
+ul,
+ol,
+dl {
   list-style-type: none;
 }
-
-button {
-  font: inherit;
-  cursor: pointer;
-}
-
 
 .inner {
   max-width: 120rem;
@@ -57,9 +53,24 @@ button {
   }
 }
 
+h1.tit {
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  line-height: 1.05;
+
+  &__m {
+    font-size: clamp(2.8rem, 3.6vw, 4rem);
+  }
+}
+
+p.txt {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.4vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--color-text-muted)
+}
 
 h3.card-tit {
   margin-bottom: .8rem;
   font-size: 1.6rem;
-  color:var(--color-text)
+  color: var(--color-text)
 }
