@@ -25,8 +25,8 @@ const ProjectsPages = () => {
           <span
             className="badge badge__primary badge__center"
           >Featured work</span>
-          <h1 className={styles.title}>Projects I&apos;m proud of</h1>
-          <p className={styles.lead}>
+          <h1 className="tit">Projects I&apos;m proud of</h1>
+          <p className="txt">
             From shipped products to open-source experiments <br /> — a sample of things I enjoyed building end to end.
           </p>
         </header>
